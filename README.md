@@ -130,6 +130,9 @@ names:
   78: hair drier
   79: toothbrush
 
+# Isso aqui é opcional, é um dataset pronto do coco8,
+# mas você pode remover essa linha para usar o seu dataset
+# customizado referenciando pelo path de treinamento la em cima
 download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.zip
 ```
 
