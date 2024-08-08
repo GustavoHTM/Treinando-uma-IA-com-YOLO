@@ -5,7 +5,7 @@
 Para a detecção de imagens utilizando IA, estamos utilizando a biblioteca Python [YOLO Ultralytics](https://docs.ultralytics.com/models/yolov10/#comparisons). Embora a documentação esteja na versão 10, para este projeto utilizaremos a versão 8 (YOLOv8).
 
 ## Tipos de Modelos YOLO
-![YOLOv5 Variants](file-EE21NjQ8OaBRFDh7XBnP8XmK)
+![YOLOv5 Variants](YOLOv5-variations.png)
 
 No YOLO Ultralytics, existem diferentes tipos de modelos pré-treinados que podem ser utilizados para reconhecimento de objetos. Cada modelo varia em tamanho e precisão, como mostrado na imagem acima. O modelo padrão que recomendamos é o **YOLOv8n (Nano)**, mas vale a pena estudar qual modelo se adapta melhor às suas necessidades.
 
@@ -119,7 +119,7 @@ download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.z
 75 0.501188 0.592138 0.26 0.456192
 ```
 ### Imagem correspondente `000000000030.jpg`
-![Exemplo de Imagem](file-FqCOZNe3tr03km5GBfHGfSVz)
+![Exemplo de Imagem](000000000030.jpg)
 
 Treinamento
 O treinamento é bastante simples:
