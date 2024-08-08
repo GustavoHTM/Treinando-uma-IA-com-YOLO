@@ -25,6 +25,19 @@ Dentro de cada uma das pastas principais (`train`, `val`, `test`), haverá outra
 - **images**: Conterá as imagens que serão utilizadas no treinamento. Cada imagem deve ter um nome único e ser do tipo `.jpg`.
 - **labels**: Conterá as anotações das classes para cada imagem. O nome de cada arquivo de anotação deve ser igual ao da imagem correspondente, mas com a extensão `.txt`. O conteúdo do arquivo de anotação será no formato de linha por linha, informando a classe e a bounding box do objeto.
 
+<details>
+  <summary><b>Explicação Detalhada sobre o Arquivo label.txt</b></summary>
+
+  Cada linha do arquivo `label.txt` representa uma detecção de objeto na imagem correspondente. Os valores são separados por espaços e têm os seguintes significados:
+
+  - **Classe**: O índice da classe do objeto. No exemplo acima, `0` e `1` são os índices das classes.
+  - **X_center**: A coordenada X do centro da bounding box, normalizada pelo tamanho da imagem (valor entre `0` e `1`).
+  - **Y_center**: A coordenada Y do centro da bounding box, normalizada pelo tamanho da imagem (valor entre `0` e `1`).
+  - **Width**: A largura da bounding box, normalizada pelo tamanho da imagem (valor entre `0` e `1`).
+  - **Height**: A altura da bounding box, normalizada pelo tamanho da imagem (valor entre `0` e `1`).
+
+</details>
+
 ### Exemplo de Arquivo `data.yaml`
 
 ```yaml
