@@ -18,6 +18,13 @@ A estrutura do dataset consiste nas seguintes pastas e arquivos de configuraçã
 - **test** (opcional): Imagens para testar o modelo com novos casos (3% a 15% do total).
 - **data.yaml**: Arquivo de configuração do dataset, que define os caminhos das pastas e as classes de objetos.
 
+### Estrutura de Diretórios
+
+Dentro de cada uma das pastas principais (`train`, `val`, `test`), haverá outras duas subpastas:
+
+- **images**: Conterá as imagens que serão utilizadas no treinamento. Cada imagem deve ter um nome único e ser do tipo `.jpg`.
+- **labels**: Conterá as anotações das classes para cada imagem. O nome de cada arquivo de anotação deve ser igual ao da imagem correspondente, mas com a extensão `.txt`. O conteúdo do arquivo de anotação será no formato de linha por linha, informando a classe e a bounding box do objeto.
+
 ### Exemplo de Arquivo `data.yaml`
 
 ```yaml
