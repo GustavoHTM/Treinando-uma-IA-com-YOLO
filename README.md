@@ -121,7 +121,7 @@ download: https://github.com/ultralytics/assets/releases/download/v0.0.0/coco8.z
 ### Imagem correspondente `000000000030.jpg`
 ![Exemplo de Imagem](000000000030.jpg)
 
-Treinamento
+### Treinamento
 O treinamento é bastante simples:
 
 Importe o dataset para um Google Colab Notebook.
