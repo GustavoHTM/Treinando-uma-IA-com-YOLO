@@ -128,14 +128,18 @@ Importe o dataset para um Google Colab Notebook.
 Baixe o modelo pré-treinado YOLOv8.
 Instale as dependências necessárias (ultralytics).
 Execute o comando de treinamento:
-python
-Copiar código
+
+```
 !yolo task=detect mode=train model=yolov8n.pt data={dataset.location}/data.yaml name=yolov8-1.25 epochs=25 imgsz=800 plots=True
-Mais detalhes sobre a configuração do treinamento estão disponíveis na documentação do Ultralytics.
+```
 
-Dicas para o Treinamento
+Mais detalhes sobre a configuração do treinamento estão disponíveis na documentação do [Ultralytics](https://docs.ultralytics.com/usage/cfg/).
+
+### Dicas para o Treinamento
 Épocas: Representam o número de vezes que o modelo irá passar pelo dataset. O ideal é treinar a IA entre 600 e 1000 épocas para obter um bom desempenho.
-Para mais detalhes sobre o passo a passo do treinamento, acesse o Google Colab Notebook.
+Para mais detalhes sobre o passo a passo do treinamento, acesse [Ultralytics configuration](https://docs.ultralytics.com/usage/cfg/).
 
-Exportando o Modelo
+Para a realização do treinamento ele pode estar sendo feito nesse [Google Collab Notebook](https://colab.research.google.com/drive/1DaVplS3VBNj-nZo0f9qm1D-LokmpVyeT#scrollTo=FIQ_zeUGIp43): 
+
+### Exportando o Modelo
 Após o treinamento, o modelo pode ser exportado de .pt (PyTorch) para outros formatos, como NCNN para uso em Android, entre outros formatos necessários para compatibilidade ou desempenho.
